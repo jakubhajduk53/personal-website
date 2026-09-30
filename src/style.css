@@ -1,1 +1,16 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-tiktok-sans: "TikTok Sans";
+}
