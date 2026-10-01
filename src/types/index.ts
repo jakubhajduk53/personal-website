@@ -5,3 +5,9 @@ export interface HeaderPaths {
   to: RouteLocationRaw;
   label: string;
 }
+
+export interface IconLink {
+  name: string;
+  href: string;
+  label: string;
+}
