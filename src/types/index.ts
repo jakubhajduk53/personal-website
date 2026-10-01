@@ -11,3 +11,9 @@ export interface IconLink {
   href: string;
   label: string;
 }
+
+export interface FooterIconItem {
+  label: string;
+  value: string;
+  href?: string;
+}
