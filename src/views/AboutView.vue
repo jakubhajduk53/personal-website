@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Slider from "../components/Slider.vue";
+</script>
 
 <template>
   <div class="flex w-full h-full justify-center pl-24">
@@ -25,6 +27,8 @@
         travel the world
       </div>
     </div>
-    <div class="flex items-center w-full"></div>
+    <div class="flex items-center w-full">
+      <Slider />
+    </div>
   </div>
 </template>

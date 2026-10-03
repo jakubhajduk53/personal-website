@@ -17,3 +17,10 @@ export interface FooterIconItem {
   value: string;
   href?: string;
 }
+
+export interface Slide {
+  id: number;
+  src: string;
+  caption: string;
+  description: string;
+}
