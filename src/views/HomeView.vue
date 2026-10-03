@@ -25,7 +25,7 @@ import { RouterLink } from "vue-router";
     </div>
     <div class="flex items-center w-full">
       <img
-        src="../assets/myself.png"
+        src="../assets/myself.jpg"
         class="w-150 rounded-4xl outline-2 shadow-xl brightness-115"
       />
     </div>
