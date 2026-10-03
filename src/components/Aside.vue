@@ -24,7 +24,7 @@ const links: IconLink[] = [
 
 <template>
   <div
-    class="flex flex-col justify-between h-screen border-r border-gray-200 min-w-[5vw] w-25"
+    class="flex flex-col justify-between h-screen border-r border-gray-200 min-w-[5vw] w-30"
   >
     <div class="flex items-center justify-center text-2xl h-24">
       <span>j</span><span class="text-[rgb(251,139,36)]">hajduk</span>
