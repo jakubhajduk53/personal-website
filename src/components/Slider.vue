@@ -22,7 +22,7 @@ function prev(): void {
 </script>
 
 <template>
-  <div class="flex flex-col items-center w-full gap-4">
+  <div class="flex flex-col items-center w-full p-5 gap-5">
     <div class="flex flex-col items-center w-150">
       <p class="font-semibold text-2xl text-[rgb(251,139,36)]">
         {{ props.title }}
@@ -37,7 +37,7 @@ function prev(): void {
       >
         &lt;
       </button>
-      <div class="flex items-center justify-center w-150 aspect-4/3">
+      <div class="flex items-center justify-center mx-5 w-150 aspect-4/3">
         <img
           :key="active.id"
           :src="active.src"
