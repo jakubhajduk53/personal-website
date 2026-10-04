@@ -16,9 +16,6 @@ import Footer from "../src/components/Footer.vue";
             <Transition name="fade" mode="out-in">
               <component :is="Component" :key="route.path" />
             </Transition>
-            <template #fallback>
-              <LoadingSpinner />
-            </template>
           </Suspense>
         </RouterView>
       </div>

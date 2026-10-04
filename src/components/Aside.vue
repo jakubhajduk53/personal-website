@@ -29,7 +29,7 @@ const links: IconLink[] = [
   >
     <div class="flex items-center justify-center px-2 text-2xl h-24">
       <RouterLink to="/" aria-label="home">
-        <span>j</span><span class="text-[rgb(251,139,36)]">hajduk</span>
+        <span>j</span><span class="text-highlight">hajduk</span>
       </RouterLink>
     </div>
     <div class="flex flex-col items-center gap-3 mb-12">

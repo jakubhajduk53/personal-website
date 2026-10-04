@@ -37,4 +37,8 @@ body,
 
 @theme {
   --font-tiktok-sans: "TikTok Sans";
+  --color-main: rgb(15, 76, 92);
+  --color-main-hover: rgb(8, 65, 75);
+  --color-highlight: rgb(154, 3, 30);
+  --color-highlight-hover: rgb(133, 3, 30);
 }
