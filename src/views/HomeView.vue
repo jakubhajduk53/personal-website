@@ -30,6 +30,7 @@ import { RouterLink } from "vue-router";
     <div class="order-2 flex items-center">
       <img
         src="../assets/myself.jpg"
+        alt="site owner"
         class="w-40 md:w-60 lg:w-150 rounded-4xl outline-2 shadow-xl brightness-115"
       />
     </div>
