@@ -23,4 +23,5 @@ export interface Slide {
   src: string;
   caption: string;
   description: string;
+  href?: string;
 }

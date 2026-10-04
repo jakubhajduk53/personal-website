@@ -55,7 +55,16 @@ function prev(): void {
       </button>
     </div>
     <div class="flex flex-col items-center gap-1 w-150">
-      <p class="text-lg text-center">{{ active.caption }}</p>
+      <a
+        v-if="active.href"
+        :href="active.href"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-lg text-center underline"
+      >
+        {{ active.caption }}
+      </a>
+      <p v-else class="text-lg text-center">{{ active.caption }}</p>
       <p class="text-center text-sm">{{ active.description }}</p>
       <span class="text-sm text-gray-500"
         >{{ current + 1 }} / {{ props.slides.length }}</span

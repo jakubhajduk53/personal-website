@@ -9,24 +9,28 @@ const slides: Slide[] = [
     src: new URL("../assets/projects/quiz.jpg", import.meta.url).href,
     caption: "Trivia Quiz",
     description: "Answer 10 various trivia questions",
+    href: "https://quiz-2025.vercel.app/",
   },
   {
     id: 2,
     src: new URL("../assets/projects/myui.jpg", import.meta.url).href,
     caption: "UI Library",
     description: "Build interfaces faster with custom-styled UI components",
+    href: "https://my-ui-jakubhajduk53s-projects.vercel.app/",
   },
   {
     id: 3,
     src: new URL("../assets/projects/monocolor.jpg", import.meta.url).href,
     caption: "Discover modern HSL palette usage",
     description: "Build interfaces faster with custom-styled UI components",
+    href: "https://monocolor-landing-page.vercel.app/",
   },
   {
     id: 4,
     src: new URL("../assets/projects/weather.jpg", import.meta.url).href,
     caption: "Weather Forecast",
     description: "Check the weather at any location",
+    href: "https://weather-app-jakubhajduk53s-projects.vercel.app/",
   },
 ];
 </script>
