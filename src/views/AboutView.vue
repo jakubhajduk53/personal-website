@@ -6,40 +6,40 @@ import type { Slide } from "../types";
 const slides: Slide[] = [
   {
     id: 1,
-    src: new URL("../assets/aboutPhotos/SantiagoBernabeu.jpg", import.meta.url)
+    src: new URL("../assets/aboutPhotos/santiago-bernabeu.jpg", import.meta.url)
       .href,
     caption: "Santiago Bernabeu, Madrid",
     description: "One more bucket list item checked off",
   },
   {
     id: 2,
-    src: new URL("../assets/aboutPhotos/Malaga.jpg", import.meta.url).href,
+    src: new URL("../assets/aboutPhotos/malaga.jpg", import.meta.url).href,
     caption: "Puente del Carmen, Malaga",
     description: "Endless memories",
   },
   {
     id: 3,
-    src: new URL("../assets/aboutPhotos/GibraltarMonkey.jpg", import.meta.url)
+    src: new URL("../assets/aboutPhotos/gibraltar-monkey.jpg", import.meta.url)
       .href,
     caption: "Me with Gibraltar macauqe",
     description: "the only wild monkey species found in Europe",
   },
   {
     id: 4,
-    src: new URL("../assets/aboutPhotos/SunsetSide.jpg", import.meta.url).href,
+    src: new URL("../assets/aboutPhotos/sunset-side.jpg", import.meta.url).href,
     caption: "Sunset in Mediterranean coast, Side",
     description: "30°C water + burning sand",
   },
   {
     id: 5,
-    src: new URL("../assets/aboutPhotos/GibraltarPhone.jpg", import.meta.url)
+    src: new URL("../assets/aboutPhotos/gibraltar-phone.jpg", import.meta.url)
       .href,
     caption: "Red telephone box, Gibraltar",
     description: "A classic British icon",
   },
   {
     id: 6,
-    src: new URL("../assets/aboutPhotos/Alanya.jpg", import.meta.url).href,
+    src: new URL("../assets/aboutPhotos/alanya.jpg", import.meta.url).href,
     caption: "Alanya from above",
     description: "Stunning views, endless blue",
   },
