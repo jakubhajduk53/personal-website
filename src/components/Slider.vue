@@ -22,51 +22,55 @@ function prev(): void {
 </script>
 
 <template>
-  <div class="flex flex-col items-center w-full p-5 gap-5">
-    <div class="flex flex-col items-center w-150">
-      <p class="font-semibold text-2xl text-[rgb(251,139,36)]">
+  <div
+    class="order-2 flex flex-col items-center w-full p-1 lg:p-5 gap-1 lg:gap-5"
+  >
+    <div class="flex flex-col items-center w-40 md:w-75 lg:w-100 xl:w-150">
+      <p class="font-semibold text-lg lg:text-2xl text-[rgb(251,139,36)]">
         {{ props.title }}
       </p>
     </div>
     <div class="flex items-center justify-center w-full">
       <button
         type="button"
-        class="size-12 rounded-xl bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg text-xl cursor-pointer"
+        class="size-10 lg:size-12 rounded-lg bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg lg:text-xl cursor-pointer"
         aria-label="Previous photo"
         @click="prev"
       >
         &lt;
       </button>
-      <div class="flex items-center justify-center mx-5 w-150 aspect-4/3">
+      <div
+        class="flex items-center justify-center mx-1 lg:mx-5 w-40 md:w-75 lg:w-100 xl:w-150 aspect-4/3"
+      >
         <Transition name="photo" mode="out-in">
           <img
             :key="active.id"
             :src="active.src"
             :alt="active.caption"
-            class="max-w-full max-h-full object-contain rounded-4xl outline-2 shadow-xl brightness-115"
+            class="max-w-full max-h-full object-contain rounded-4xl outline-2 shadow-lg brightness-115"
           />
         </Transition>
       </div>
       <button
         type="button"
-        class="size-12 rounded-xl bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg text-xl cursor-pointer"
+        class="size-10 lg:size-12 rounded-lg bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg lg:text-xl cursor-pointer"
         aria-label="Next photo"
         @click="next"
       >
         &gt;
       </button>
     </div>
-    <div class="flex flex-col items-center gap-1 w-150">
+    <div class="flex flex-col items-center lg:gap-1">
       <a
         v-if="active.href"
         :href="active.href"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-lg text-center underline"
+        class="lg:text-xl text-center underline"
       >
         {{ active.caption }}
       </a>
-      <p v-else class="text-lg text-center">{{ active.caption }}</p>
+      <p v-else class="lg:text-xl text-center">{{ active.caption }}</p>
       <p class="text-center text-sm">{{ active.description }}</p>
       <span class="text-sm text-gray-500"
         >{{ current + 1 }} / {{ props.slides.length }}</span

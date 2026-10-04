@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import type { FooterIconItem } from "../types";
+import type { IFooterItem } from "../types";
 
-defineProps<FooterIconItem>();
+defineProps<IFooterItem>();
 </script>
 
 <template>
-  <div class="flex flex-col justify-center p-4">
-    <div class="font-semibold">{{ label }}</div>
-    <a v-if="href" :href="href" class="hover:underline">{{ value }}</a>
-    <div v-else>{{ value }}</div>
+  <div class="flex flex-col justify-center lg:p-4">
+    <div class="font-semibold text-xs lg:text-base">{{ label }}</div>
+    <a v-if="href" :href="href" class="text-xs md:text-base hover:underline">{{
+      value
+    }}</a>
+    <div v-else class="text-xs md:text-base">{{ value }}</div>
   </div>
 </template>

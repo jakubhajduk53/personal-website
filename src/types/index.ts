@@ -12,7 +12,7 @@ export interface IconLink {
   label: string;
 }
 
-export interface FooterIconItem {
+export interface IFooterItem {
   label: string;
   value: string;
   href?: string;
