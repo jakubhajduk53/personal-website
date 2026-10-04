@@ -48,7 +48,7 @@ const slides: Slide[] = [
 
 <template>
   <div class="flex w-full h-full justify-around">
-    <div class="flex flex-col justify-center font-semibold gap-5">
+    <div class="flex flex-col w-150 justify-center font-semibold gap-5">
       <div>
         I'm 23 years old part-time student who looks for
         <span class="text-[rgb(251,139,36)]">new opportunities</span>
