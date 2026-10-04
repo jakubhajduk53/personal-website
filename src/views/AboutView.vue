@@ -47,28 +47,32 @@ const slides: Slide[] = [
 </script>
 
 <template>
-  <div class="flex w-full h-full justify-around">
-    <div class="flex flex-col w-150 justify-center font-semibold gap-5">
-      <div>
-        I'm 23 years old part-time student who looks for
-        <span class="text-[rgb(251,139,36)]">new opportunities</span>
-      </div>
-      <div>
-        I currently <span class="text-[rgb(251,139,36)]">work</span> in FAKRO,
-        creating windows by using advanced machines
-      </div>
-      <div>
-        I'm a programmer by
-        <span class="text-[rgb(251,139,36)]">profession</span>, currently
-        exploring new fields
-      </div>
-      <div>
-        My <span class="text-[rgb(251,139,36)]">hobby</span> is chess, and I
-        play online almost every day
-      </div>
-      <div>
-        My biggest <span class="text-[rgb(251,139,36)]">dream</span> is to
-        travel the world
+  <div class="flex flex-col xl:flex-row w-full h-full justify-around">
+    <div class="contents xl:flex xl:flex-col xl:justify-center">
+      <div
+        class="order-1 flex flex-col items-center xl:items-start xl:w-150 text-sm xl:text-base justify-center font-semibold p-2 lg:p-0 gap-1 xl:gap-5"
+      >
+        <div>
+          I'm 23 years old part-time student who looks for
+          <span class="text-[rgb(251,139,36)]">new opportunities</span>
+        </div>
+        <div>
+          I currently <span class="text-[rgb(251,139,36)]">work</span> in FAKRO,
+          creating windows by using advanced machines
+        </div>
+        <div>
+          I'm a programmer by
+          <span class="text-[rgb(251,139,36)]">profession</span>, currently
+          exploring new fields
+        </div>
+        <div>
+          My <span class="text-[rgb(251,139,36)]">hobby</span> is chess, and I
+          play online almost every day
+        </div>
+        <div>
+          My biggest <span class="text-[rgb(251,139,36)]">dream</span> is to
+          travel the world
+        </div>
       </div>
     </div>
     <div class="flex items-center">

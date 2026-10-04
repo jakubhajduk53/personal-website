@@ -12,13 +12,15 @@ const paths: HeaderPaths[] = [
 
 <template>
   <div>
-    <nav class="flex items-center justify-around ml-5 w-[30vw] h-24">
+    <nav
+      class="flex items-center justify-around text-center mx-2 xl:mx-5 xl:w-[30vw] h-24"
+    >
       <RouterLink
         v-for="path in paths"
         :key="path.id"
         :to="path.to"
         :aria-label="path.label"
-        class="font-semibold text-lg"
+        class="font-semibold lg:text-lg"
         exact-active-class="underline decoration-2  underline-offset-6"
       >
         {{ path.label }}

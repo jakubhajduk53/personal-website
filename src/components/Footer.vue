@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import FooterIcon from "../components/FooterItem.vue";
-import type { FooterIconItem } from "../types";
+import FooterItem from "../components/FooterItem.vue";
+import type { IFooterItem } from "../types";
 
-const items: FooterIconItem[] = [
+const items: IFooterItem[] = [
   {
     label: "Email",
     value: "jakubhajduk53@gmail.com",
@@ -14,10 +14,13 @@ const items: FooterIconItem[] = [
 </script>
 
 <template>
-  <div class="flex justify-around h-24 w-[40vw]">
+  <div class="flex flex-col md:flex-row justify-around p-2 lg:h-24 lg:w-[50vw]">
     <template v-for="(item, index) in items" :key="item.label">
-      <span v-if="index > 0" class="w-0.5 h-8 self-center bg-gray-400" />
-      <FooterIcon v-bind="item" />
+      <span
+        v-if="index > 0"
+        class="w-0.5 h-8 hidden md:block self-center bg-gray-400"
+      />
+      <FooterItem v-bind="item" />
     </template>
   </div>
 </template>

@@ -25,9 +25,9 @@ const links: IconLink[] = [
 
 <template>
   <div
-    class="flex flex-col justify-between h-screen border-r border-gray-200 min-w-[5vw] w-30"
+    class="flex flex-col justify-between h-screen border-r border-gray-200 lg:w-30"
   >
-    <div class="flex items-center justify-center text-2xl h-24">
+    <div class="flex items-center justify-center px-2 text-2xl h-24">
       <RouterLink to="/" aria-label="home">
         <span>j</span><span class="text-[rgb(251,139,36)]">hajduk</span>
       </RouterLink>
