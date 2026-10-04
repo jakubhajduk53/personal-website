@@ -47,8 +47,8 @@ const slides: Slide[] = [
 </script>
 
 <template>
-  <div class="flex w-full h-full justify-center pl-24">
-    <div class="flex flex-col justify-center w-1/2 font-semibold gap-2">
+  <div class="flex w-full h-full justify-around">
+    <div class="flex flex-col justify-center font-semibold gap-5">
       <div>
         I'm 23 years old part-time student who looks for
         <span class="text-[rgb(251,139,36)]">new opportunities</span>
@@ -71,7 +71,7 @@ const slides: Slide[] = [
         travel the world
       </div>
     </div>
-    <div class="flex items-center w-full">
+    <div class="flex items-center">
       <Slider :slides="slides" title="My photo gallery" />
     </div>
   </div>
