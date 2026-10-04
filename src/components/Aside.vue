@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Icon from "./Icon.vue";
 import type { IconLink } from "../types/";
+import { RouterLink } from "vue-router";
 
 const links: IconLink[] = [
   { name: "github", href: "https://github.com/jakubhajduk53", label: "GitHub" },
@@ -27,7 +28,9 @@ const links: IconLink[] = [
     class="flex flex-col justify-between h-screen border-r border-gray-200 min-w-[5vw] w-30"
   >
     <div class="flex items-center justify-center text-2xl h-24">
-      <span>j</span><span class="text-[rgb(251,139,36)]">hajduk</span>
+      <RouterLink to="/" aria-label="home">
+        <span>j</span><span class="text-[rgb(251,139,36)]">hajduk</span>
+      </RouterLink>
     </div>
     <div class="flex flex-col items-center gap-3 mb-12">
       <span v-for="link in links" :key="link.name">

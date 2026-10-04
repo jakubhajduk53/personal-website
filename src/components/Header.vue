@@ -12,7 +12,7 @@ const paths: HeaderPaths[] = [
 
 <template>
   <div>
-    <nav class="flex w-[30vw] items-center justify-around h-24 ml-8">
+    <nav class="flex items-center justify-around ml-5 w-[30vw] h-24">
       <RouterLink
         v-for="path in paths"
         :key="path.id"
