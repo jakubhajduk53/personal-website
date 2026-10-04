@@ -11,11 +11,30 @@ import Footer from "../src/components/Footer.vue";
     <main class="flex flex-col flex-1">
       <Header />
       <div class="flex-1">
-        <RouterView v-slot="{ Component }">
-          <component :is="Component" />
+        <RouterView v-slot="{ Component, route }">
+          <Suspense :timeout="300">
+            <Transition name="fade" mode="out-in">
+              <component :is="Component" :key="route.path" />
+            </Transition>
+            <template #fallback>
+              <LoadingSpinner />
+            </template>
+          </Suspense>
         </RouterView>
       </div>
       <Footer />
     </main>
   </div>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
