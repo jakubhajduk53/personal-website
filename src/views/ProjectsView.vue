@@ -43,7 +43,7 @@ const slides: Slide[] = [
       >
         <div>
           My websites are built with the
-          <span class="text-[rgb(251,139,36)]">Vue.js</span> framework
+          <span class="text-highlight">Vue.js</span> framework
         </div>
         <div>I follow modern software development best practices</div>
         <div>I write clean, maintainable, and scalable code</div>

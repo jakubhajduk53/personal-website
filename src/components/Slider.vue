@@ -26,14 +26,14 @@ function prev(): void {
     class="order-2 flex flex-col items-center w-full p-1 lg:p-5 gap-1 lg:gap-5"
   >
     <div class="flex flex-col items-center w-40 md:w-75 lg:w-100 xl:w-150">
-      <p class="font-semibold text-lg lg:text-2xl text-[rgb(251,139,36)]">
+      <p class="font-semibold text-lg lg:text-2xl text-highlight">
         {{ props.title }}
       </p>
     </div>
     <div class="flex items-center justify-center w-full">
       <button
         type="button"
-        class="size-10 lg:size-12 rounded-lg bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg lg:text-xl cursor-pointer"
+        class="size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg lg:text-xl cursor-pointer"
         aria-label="Previous photo"
         @click="prev"
       >
@@ -53,7 +53,7 @@ function prev(): void {
       </div>
       <button
         type="button"
-        class="size-10 lg:size-12 rounded-lg bg-[rgb(15,76,92)] hover:bg-[rgb(8,65,75)] text-white shadow-lg lg:text-xl cursor-pointer"
+        class="size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg lg:text-xl cursor-pointer"
         aria-label="Next photo"
         @click="next"
       >
