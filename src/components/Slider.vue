@@ -38,12 +38,14 @@ function prev(): void {
         &lt;
       </button>
       <div class="flex items-center justify-center mx-5 w-150 aspect-4/3">
-        <img
-          :key="active.id"
-          :src="active.src"
-          :alt="active.caption"
-          class="max-w-full max-h-full object-contain rounded-4xl outline-2 shadow-xl brightness-115"
-        />
+        <Transition name="photo" mode="out-in">
+          <img
+            :key="active.id"
+            :src="active.src"
+            :alt="active.caption"
+            class="max-w-full max-h-full object-contain rounded-4xl outline-2 shadow-xl brightness-115"
+          />
+        </Transition>
       </div>
       <button
         type="button"
@@ -72,3 +74,15 @@ function prev(): void {
     </div>
   </div>
 </template>
+
+<style>
+.photo-enter-active,
+.photo-leave-active {
+  transition: opacity 0.05s ease;
+}
+
+.photo-enter-from,
+.photo-leave-to {
+  opacity: 0;
+}
+</style>
