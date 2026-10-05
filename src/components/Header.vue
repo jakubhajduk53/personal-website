@@ -6,7 +6,6 @@ const paths: HeaderPaths[] = [
   { id: 1, to: "/", label: "home" },
   { id: 2, to: "/about", label: "about me" },
   { id: 3, to: "/projects", label: "my projects" },
-  { id: 4, to: "/contact", label: "contact me" },
 ];
 </script>
 
