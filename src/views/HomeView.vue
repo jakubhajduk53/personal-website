@@ -31,7 +31,6 @@ import { RouterLink } from "vue-router";
       <img
         src="../assets/myself.jpg"
         alt="site owner"
-        loading="eager"
         fetchpriority="high"
         class="w-40 md:w-60 lg:w-150 rounded-4xl outline-2 shadow-xl brightness-115"
       />
