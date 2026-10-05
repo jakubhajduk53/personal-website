@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import type { Slide } from "../types";
+import ChevronLeft from "../assets/chevron-left.svg?component";
+import ChevronRight from "../assets/chevron-right.svg?component";
 
 const props = defineProps<{
   title: string;
@@ -33,11 +35,11 @@ function prev(): void {
     <div class="flex items-center justify-center w-full">
       <button
         type="button"
-        class="size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg lg:text-xl cursor-pointer"
+        class="flex items-center justify-center size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg cursor-pointer"
         aria-label="Previous photo"
         @click="prev"
       >
-        &lt;
+        <ChevronLeft class="size-6 lg:size-8" aria-hidden="true" />
       </button>
       <div
         class="flex items-center justify-center mx-1 lg:mx-5 w-40 md:w-75 lg:w-100 xl:w-150 aspect-4/3"
@@ -53,11 +55,11 @@ function prev(): void {
       </div>
       <button
         type="button"
-        class="size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg lg:text-xl cursor-pointer"
+        class="flex items-center justify-center size-10 lg:size-12 rounded-lg bg-main hover:bg-main-hover text-white shadow-lg lg:text-xl cursor-pointer"
         aria-label="Next photo"
         @click="next"
       >
-        &gt;
+        <ChevronRight class="size-6 lg:size-8" aria-hidden="true" />
       </button>
     </div>
     <div class="flex flex-col items-center lg:gap-1">
