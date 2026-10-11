@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: "TikTok Sans";
   font-style: normal;
@@ -21,8 +23,6 @@
     U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@import "tailwindcss";
-
 html,
 body,
 #app {
@@ -36,7 +36,7 @@ body,
 }
 
 @theme {
-  --font-tiktok-sans: "TikTok Sans";
+  --font-tiktok-sans: "TikTok Sans", ui-sans-serif, system-ui, sans-serif;
   --color-main: rgb(15, 76, 92);
   --color-main-hover: rgb(8, 65, 75);
   --color-highlight: rgb(154, 3, 30);

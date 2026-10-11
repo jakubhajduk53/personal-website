@@ -29,9 +29,11 @@ import { RouterLink } from "vue-router";
     </div>
     <div class="order-2 flex items-center">
       <img
-        src="../assets/myself.jpg"
+        src="../assets/myself.webp"
         alt="site owner"
         fetchpriority="high"
+        width="800"
+        height="770"
         class="w-40 md:w-60 lg:w-150 rounded-4xl outline-2 shadow-xl brightness-115"
       />
     </div>
